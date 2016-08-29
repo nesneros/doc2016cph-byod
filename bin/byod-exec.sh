@@ -8,6 +8,6 @@ shift
 cmd="$@"
 
 conDir=/var/byod/containers/$conName
+conFs=$(readlink $conDir/fs)
 
-# TODO Enter namespace(s) file system for pid/container
-
+# TODO Enter namespace(s) and file system for pid/container
